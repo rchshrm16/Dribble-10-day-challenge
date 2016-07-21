@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Day 9</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<div class="main">
+			<div class="midd">
+				<div class="heading">Select categories</div>
+				<div class="subhad">Please select a minimum of 2 categories</div>
+				<div class="catg">
+					<div class="card-container">
+						<div class="card place">
+							<img src="img/places.png" alt="" class="card-img">
+							<div class="detail">
+								<h4>Travel</h4>
+								<h6>432 items</h6>
+							</div>
+							<div class="add" id="p-a"><i class="fa fa-check fa-2x" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div class="card-container">
+						<div class="card women">
+							<img src="img/women.png" alt="" class="card-img">
+							<div class="detail">
+								<h4>Women</h4>
+								<h6>692 items</h6>
+							</div>
+							<div class="add" id="w-a"><i class="fa fa-check fa-2x" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div class="card-container">
+						<div class="card sports">
+							<img src="img/sports.png" alt="" class="card-img">
+							<div class="detail">
+								<h4>Sport</h4>
+								<h6>243 items</h6>
+							</div>
+							<div class="add" id="s-a"><i class="fa fa-check fa-2x" aria-hidden="true"></i></div>
+						</div>
+					</div>
+					<div class="card-container">
+						<div class="card men">
+							<img src="img/men.png" alt="" class="card-img">
+							<div class="detail">
+								<h4>Men</h4>
+								<h6>518 items</h6>
+							</div>
+							<div class="add" id="m-a"><i class="fa fa-check fa-2x" aria-hidden="true"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="btton">
+					<a class="mybtn">Next</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('#m-a, #s-a, #p-a, #w-a').hide();
+				var men = false;
+				var women = false;
+				var sports = false;
+				var place = false;
+				$('.men').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					if( men == false){
+						$('#m-a').show();
+						men = true;
+						console.log('men true')
+					}else{
+						$('#m-a').hide();
+						men = false;
+						console.log('men false')
+					}
+				});
+				$('.sports').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					if( sports == false){
+						$('#s-a').show();
+						sports = true;
+						console.log('sport true')
+					}else{
+						$('#s-a').hide();
+						sports = false;
+						console.log('sport false')
+					}
+				});
+				$('.women').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					if( women == false){
+						$('#w-a').show();
+						women = true;
+						console.log('women true')
+					}else{
+						$('#w-a').hide();
+						women = false;
+						console.log('women false')
+					}
+				});
+				$('.place').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					if( place == false){
+						$('#p-a').show();
+						place = true;
+						console.log('place true')
+					}else{
+						$('#p-a').hide();
+						place = false;
+						console.log('place false')
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

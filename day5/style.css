@@ -1,0 +1,68 @@
+.main{
+	width: 100vw;
+	height: 100vh;
+	background: url('img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 0;
+	margin: 0;
+}
+.sixty{
+	width: 60%;
+	height: 100%;
+	background: url('img/brownbg.jpg');
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	float: left;
+}
+.forty{
+	width: 40%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	background-color: rgba(0,0,0,.5);
+	float: left;
+	position: relative;
+}
+.cont{
+	width: 80%;
+	height: 80%;
+	margin: 7%;
+}
+h2{
+	font-size: 28px;
+	padding: 0;
+	margin-top: 30px;
+	text-transform: uppercase;
+	line-height: 1.2em;
+}
+h5{
+	font-size: 20px;
+	padding: 0;
+	margin-top: 20px;
+	line-height: 1.2em;
+}
+.space{
+	padding: 0 60px;
+
+}
+.mybtn{
+	text-transform: uppercase;
+	font-size: 20px;
+	border: 2px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+	background-color: transparent;
+	padding: 20px 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}

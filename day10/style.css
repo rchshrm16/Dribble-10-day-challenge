@@ -1,0 +1,141 @@
+.main
+{
+	width: 100vw;
+	height: 100vh;
+	background: url(img/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+}
+.mid{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.backside{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60vw;
+	height: 50vh;
+	background-color: rgba(0,0,0,.9);
+	border-radius: 2px;
+	-webkit-box-shadow: 1px 1px 27px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 1px 1px 27px 0px rgba(0,0,0,0.6);
+	box-shadow: 1px 1px 27px 0px rgba(0,0,0,0.6);
+	color: rgba(255,255,255,.7);
+}
+.text-cont-l{
+	padding: 30px;
+	position: absolute;
+	top:50%;
+	left: 5%;
+	transform: translate(0%, -50%);
+	width: 25vw;
+}
+.text-cont-r{
+	padding: 30px;
+	position: absolute;
+	top:50%;
+	right: 4%;
+	transform: translate(0%, -50%);
+	width: 25vw;
+}
+.backside h1{
+	font-weight: 300;
+	font-size: 2.9em;
+	padding: 10px 0;
+}
+.backside h6{
+	font-weight: 300;
+	font-size: 1.2em;
+	padding-bottom: 20px;
+}
+.mybtn{
+	color: rgba(255,255,255,.7);
+	border: 1px solid rgba(255,255,255,.7);
+	border-radius: 3px;
+	padding: 7px 30px;
+	text-transform: uppercase;
+	background: transparent;
+}
+.front{
+	width: 28vw;
+	height: 58vh;
+	background: #fff;
+}
+.signup{
+	position: absolute;
+	top:50%;
+	left: 0;
+	transform: translate(-94%, -50%);
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.63);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.63);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.63);
+
+}
+
+.login{
+	position: absolute;
+	top:50%;
+	right: 0;
+	transform: translate(94%, -50%);
+	-webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.63);
+-moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.63);
+box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.63);
+}
+.form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 18vw;
+}
+.signup h4, .login h4{
+	font-size: 1.7em;
+	font-weight: 400;
+	color: #f78c7b;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 1.2% 0 4% 0;
+}
+.input{
+	margin: 1.5em 0;
+	width: 100%;
+	color: #a9a9ab;
+	border-bottom: 1px solid #a9a9ab;
+}
+.input input{
+	width: 90%;
+	border: 0;
+	outline: none;
+	height: 3em;
+	margin-bottom: 1px;
+}
+.submit{
+	background-color: #f78c7b;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 8px 20px;
+	outline: none;
+	border:0;
+	border-radius: 4px;
+	margin-top: 4%;
+}
+.login a{
+	color: #a9a9ab;
+	margin: 8px 0;
+}
+.right{
+	text-align: right;
+}
+.padding0{
+	padding: 0;
+}
+.padding10{
+	padding: 14px 0;
+}

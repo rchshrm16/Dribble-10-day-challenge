@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Day 7</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 pr">
+						<div class="card">
+							<div class="heading">Control Sliders</div>
+							<div class="squre-cont">
+								<div class="center-squre">
+									<div class="squre"></div>
+									<button class="edit">Edit Shape</button>
+								</div>
+							</div>
+							<div class="controllers">
+								<div class="range">
+									<h5>Width</h5>
+									<span class="pull-left">0</span><span class="pull-right">100</span>
+									<input type="range" id="w" min="0" max="220" value="130">
+								</div>
+								<div class="range">
+									<h5>Height</h5>
+									<span class="pull-left">0</span><span class="pull-right">100</span>
+									<input type="range" id="h" min="0" max="220" value="130">
+								</div>
+								<div class="range">
+									<h5>Angle</h5>
+									<span class="pull-left">0</span><span class="pull-right">100</span>
+									<input type="range" id="a" min="0" max="360" value="180">
+								</div>
+							</div>
+							<div class="buttons">
+								<div class="col-xs-6">
+									<button class="mybtn br">Cancel</button>
+								</div>
+								<div class="col-xs-6">
+									<button class="mybtn bl">Done</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('.controllers, .buttons').hide();
+
+				$('.edit').on('click', function(event) {
+					event.preventDefault();
+					$(this).hide();
+					$('.squre-cont').addClass('height-250');
+					$('.controllers, .buttons').show();
+				});
+
+				$('.mybtn').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					$('.controllers, .buttons').hide();
+					$('.edit').show();
+					$('.squre-cont').removeClass('height-250');
+					$('.squre').css({
+						height: '130px',
+						width: '130px',
+						transform: 'rotate(180deg)'
+					});
+				});
+				$('#w').on('input', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					var value = $(this).val();
+					$('.squre').css('width', value);
+				});
+				$('#h').on('input', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					var value = $(this).val();
+					$('.squre').css('height', value);
+				});
+				$('#a').on('input', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					var value = $(this).val();
+					$('.squre').css('transform', 'rotate('+value+'deg)');
+				});
+			});
+		</script>
+	</body>
+</html>

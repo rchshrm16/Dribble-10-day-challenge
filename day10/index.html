@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Day 10</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="animate.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	</head>
+	<body>
+		<div class="main">
+			<div class="mid">
+				<div class="backside">
+					<div class="col-xs-6 text-cont-l">
+						<h1>Don't have an account?</h1>
+						<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui leo. Ut non sem lectus. Duis dolor sem, porttitor.</h6>
+						<button class="mybtn" id="signup">
+							sign up
+						</button>
+					</div>
+					<div class="col-xs-6 text-cont-r">
+						<h1>Have an account?</h1>
+						<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in dui leo. Ut non sem lectus. Duis dolor sem, porttitor.</h6>
+						<button class="mybtn" id="login">
+							Login
+						</button>
+					</div>
+				</div>
+				<div class="front signup">
+					<div class="form">
+						<h4>Sign up</h4>
+							<div class="input">
+								<input type="text" placeholder="Name">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</div>
+							<div class="input">
+								<input type="email" placeholder="Email">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+								<i class="fa fa-lock" aria-hidden="true"></i>
+							</div>
+							<div class="right">
+								<button class="submit">sign up</button>
+							</div>
+							
+					</div>
+				</div>
+				<div class="front login">
+					<div class="form">
+						<h4>Log in</h4>
+							<div class="input">
+								<input type="email" placeholder="Email">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="input">
+								<input type="password" placeholder="Password">
+								<i class="fa fa-lock" aria-hidden="true"></i>
+							</div>
+							<div class="col-xs-6 padding10">
+								<a href="">Forgot password?</a>
+							</div>
+							<div class="col-xs-6 right padding0">
+								<button class="submit">Login</button>
+							</div>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$('.signup').hide();
+				$('#signup').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					$('.text-cont-l').hide();
+					$('.text-cont-r').show()
+					$('.signup').show();
+					$('.signup').addClass('animated fadeInRight');
+					$('.login').hide();
+					$('.login').removeClass('animated fadeInLeft');
+				});
+				$('#login').on('click', function(event) {
+					event.preventDefault();
+					/* Act on the event */
+					$('.text-cont-l').show();
+					$('.text-cont-r').hide();
+					$('.signup').hide();
+					$('.signup').removeClass('animated fadeInRight')
+					$('.login').show();
+					$('.login').addClass('animated fadeInLeft');
+				});
+			});
+		</script>
+	</body>
+</html>

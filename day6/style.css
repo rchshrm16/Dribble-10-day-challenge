@@ -1,0 +1,90 @@
+.main{
+	width: 100vw;
+	height: 100vh;
+	background: url('img/bg.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	position:relative;
+}
+.card{
+	width: 700px;
+	height: 550px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+}
+.heading{
+	padding: 30px;
+	height: 150px;
+	position: relative;
+}
+.heading .cloud{
+	display: inline;
+	height: 60px;
+	margin: 15px 30px 15px 0;
+	width: auto;
+}
+.heading .name{
+	height: 90px;
+}
+.heading .name h4{
+	font-size: 20px;
+	margin-top: 14px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+.heading .light-icon{
+	width: 80px;
+	height: auto;
+	border-radius: 50%;
+	position: absolute;
+	right: 0;
+	top: -30px;
+	transform: translateY(-50%);
+	-webkit-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.57);
+	box-shadow: 0px 4px 13px 0px rgba(0,0,0,0.57);
+}
+.gray-text{
+	color: #8f8f8f;
+}
+.report{
+	height: 400px;
+	position: relative;
+	background-color: #dfdfdf;
+}
+.details{
+	padding: 30px;
+}
+
+.details h4>strong{
+	font-weight: 900;
+}
+.details h4 > .light{
+	font-weight: 400 !important;
+}
+.details h4{
+	font-size: 22px;
+	margin-top: 18px;
+    margin-bottom: 18px;
+    font-weight: 600;
+}
+.kage img{
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.67);
+-moz-box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.67);
+box-shadow: 0px 1px 6px 0px rgba(0,0,0,0.67);
+}
+.killer-b{
+	padding: 0 40px;
+	text-align: center;
+}
